@@ -1,13 +1,17 @@
+using MG.Net6.API.CleanArchitecture.DemoAPI.Extensions;
+using Microsoft.AspNetCore.Builder;
+
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddServices(builder.Configuration);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+app.AddMiddleware(builder.Environment);
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -18,7 +22,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UseAuthorization();
+//app.UseAuthorization();
 
 app.MapControllers();
 

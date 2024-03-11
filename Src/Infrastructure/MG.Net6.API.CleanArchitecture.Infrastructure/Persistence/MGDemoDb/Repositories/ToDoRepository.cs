@@ -1,5 +1,6 @@
 ﻿using Dapper;
 using MG.Net6.API.CleanArchitecture.Infrastructure.Persistence.MGDemoDb.Repositories.SqlCommands.ToDo;
+using Microsoft.Extensions.Options;
 using System.Data;
 
 namespace MG.Net6.API.CleanArchitecture.Infrastructure.Persistence.MGDemoDb.Repositories;
@@ -9,10 +10,10 @@ public class ToDoRepository : IToDoRepository
     private readonly MGDemoDbContext dbContext;
     private readonly ApplicationConfig applicationConfig;
 
-    public ToDoRepository(MGDemoDbContext dbContext, ApplicationConfig applicationConfig)
+    public ToDoRepository(MGDemoDbContext dbContext, IOptions<ApplicationConfig> applicationConfig)
     {
         this.dbContext = dbContext;
-        this.applicationConfig = applicationConfig;
+        this.applicationConfig = applicationConfig.Value;
     }
 
     public async Task<IEnumerable<ToDoEntity>> FetchAsync()
