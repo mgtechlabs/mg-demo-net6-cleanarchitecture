@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{9C6CBCCC-7C7C-4F42-9E62-89661AFEFD9B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Host", "Host", "{6FE9506D-D517-4230-BA5F-96A8B4CDAF47}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{515558C0-7F41-456F-871C-B9478D11EDA5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{C872C8D8-EB44-450B-AC75-ABC44A66AEB4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{21484032-10FD-4750-9ADC-919B0C43B143}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MG.Net6.API.CleanArchitecture.DemoAPI", "Src\Host\MG.Net6.API.CleanArchitecture.DemoAPI\MG.Net6.API.CleanArchitecture.DemoAPI.csproj", "{258B5316-DE29-42DD-9B32-8253F41210EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MG.Net6.API.CleanArchitecture.Domain", "Src\Core\MG.Net6.API.CleanArchitecture.Domain\MG.Net6.API.CleanArchitecture.Domain.csproj", "{BEF70FDB-03A3-4E03-B484-CBBE9C2E4F9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MG.Net6.API.CleanArchitecture.Application", "Src\Core\MG.Net6.API.CleanArchitecture.Application\MG.Net6.API.CleanArchitecture.Application.csproj", "{FB5A1E7A-2E04-4B20-9225-CD6DFE2CDB1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MG.Net6.API.CleanArchitecture.Infrastructure", "Src\Infrastructure\MG.Net6.API.CleanArchitecture.Infrastructure\MG.Net6.API.CleanArchitecture.Infrastructure.csproj", "{A118F1D0-2F4F-43E5-A0FA-FE5CC5CFBCF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MG.Net6.API.CleanArchitecture.Application.IntegrationTests", "Tests\MG.Net6.API.CleanArchitecture.Application.IntegrationTests\MG.Net6.API.CleanArchitecture.Application.IntegrationTests.csproj", "{82EA60AC-D50B-4737-BFB7-63B1E8A918EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MG.Net6.API.CleanArchitecture.Application.UnitTests", "Tests\MG.Net6.API.CleanArchitecture.Application.UnitTests\MG.Net6.API.CleanArchitecture.Application.UnitTests.csproj", "{06D00BF8-31E9-4D54-8AC1-4123C65059E9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{258B5316-DE29-42DD-9B32-8253F41210EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{258B5316-DE29-42DD-9B32-8253F41210EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{258B5316-DE29-42DD-9B32-8253F41210EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{258B5316-DE29-42DD-9B32-8253F41210EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEF70FDB-03A3-4E03-B484-CBBE9C2E4F9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEF70FDB-03A3-4E03-B484-CBBE9C2E4F9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEF70FDB-03A3-4E03-B484-CBBE9C2E4F9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEF70FDB-03A3-4E03-B484-CBBE9C2E4F9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB5A1E7A-2E04-4B20-9225-CD6DFE2CDB1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB5A1E7A-2E04-4B20-9225-CD6DFE2CDB1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB5A1E7A-2E04-4B20-9225-CD6DFE2CDB1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB5A1E7A-2E04-4B20-9225-CD6DFE2CDB1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A118F1D0-2F4F-43E5-A0FA-FE5CC5CFBCF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A118F1D0-2F4F-43E5-A0FA-FE5CC5CFBCF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A118F1D0-2F4F-43E5-A0FA-FE5CC5CFBCF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A118F1D0-2F4F-43E5-A0FA-FE5CC5CFBCF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82EA60AC-D50B-4737-BFB7-63B1E8A918EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82EA60AC-D50B-4737-BFB7-63B1E8A918EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82EA60AC-D50B-4737-BFB7-63B1E8A918EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82EA60AC-D50B-4737-BFB7-63B1E8A918EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06D00BF8-31E9-4D54-8AC1-4123C65059E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06D00BF8-31E9-4D54-8AC1-4123C65059E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06D00BF8-31E9-4D54-8AC1-4123C65059E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06D00BF8-31E9-4D54-8AC1-4123C65059E9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6FE9506D-D517-4230-BA5F-96A8B4CDAF47} = {9C6CBCCC-7C7C-4F42-9E62-89661AFEFD9B}
+		{515558C0-7F41-456F-871C-B9478D11EDA5} = {9C6CBCCC-7C7C-4F42-9E62-89661AFEFD9B}
+		{C872C8D8-EB44-450B-AC75-ABC44A66AEB4} = {9C6CBCCC-7C7C-4F42-9E62-89661AFEFD9B}
+		{258B5316-DE29-42DD-9B32-8253F41210EF} = {6FE9506D-D517-4230-BA5F-96A8B4CDAF47}
+		{BEF70FDB-03A3-4E03-B484-CBBE9C2E4F9E} = {515558C0-7F41-456F-871C-B9478D11EDA5}
+		{FB5A1E7A-2E04-4B20-9225-CD6DFE2CDB1C} = {515558C0-7F41-456F-871C-B9478D11EDA5}
+		{A118F1D0-2F4F-43E5-A0FA-FE5CC5CFBCF4} = {C872C8D8-EB44-450B-AC75-ABC44A66AEB4}
+		{82EA60AC-D50B-4737-BFB7-63B1E8A918EC} = {21484032-10FD-4750-9ADC-919B0C43B143}
+		{06D00BF8-31E9-4D54-8AC1-4123C65059E9} = {21484032-10FD-4750-9ADC-919B0C43B143}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {403CFA92-F984-40AF-A1B1-A0BC09AA6FFB}
+	EndGlobalSection
+EndGlobal
